@@ -41,7 +41,7 @@ begin
         ctr <= 0;
         clk_out <= '1';
     elsif (rising_edge(clk)) then
-        if (ctr < 5) then
+        if (ctr < 50000000) then
             ctr <= ctr + 1;
             clk_out <= clk_out;
         else
